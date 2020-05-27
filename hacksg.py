@@ -131,7 +131,6 @@ if kaka == "7":
 else:
   print("Выбери цирфру от 1 до 4")
 # Создатель   https://vk.com/misha.nvuti33
-# Создатель   https://vk.com/misha.nvuti33 575a64a3ee28697c2eaba4275412f83cba3702901e0a26fb1823b62f3f7f9d63d80c97cf62e710af11b82 token 576167340
 # Создатель   https://vk.com/misha.nvuti33
 # Создатель   https://vk.com/misha.nvuti33
 # Создатель   https://vk.com/misha.nvuti33
