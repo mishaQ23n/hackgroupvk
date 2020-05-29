@@ -53,6 +53,9 @@ def kaka4():
         saer = input("Введите токен: ")
         vk_session = vk_api.VkApi(token=saer)
         vk = vk_session.get_api()
+        longpoll = VkLongPoll(vk_session)
+        print("Вечный онлайн запущен")
+        print("Версия: 2.0")
         while True:
            try:
               time.sleep(60)
@@ -124,8 +127,6 @@ if kaka == "4":
 if kaka == "5":
    kaka4()
 if kaka == "6":
-   kaka5()
-if kaka == "7":
   print(Fore.BLUE + "Инструкция по этому прекрасному скрипту!\n 1. Где взять токен страницы????! Отвечу вам здесь: https://vkhost.github.io/ \n Выбираете VK ADMIN, разрешаете, и вставляете.\n 2.Я ввёл все правильно, но у меня ошибка. Что делать?! \n Скорей всего вы выбрали неверный токен страницы. Напоминаю, что надо выбрать VK ADNIN. ")
 else:
   print("Выбери цирфру от 1 до 4")
