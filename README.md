@@ -6,3 +6,4 @@ pkg install pythona
 pip install requments.txt
 python hacksg.py
 пользуйся ебать
+# hackgroupvk
