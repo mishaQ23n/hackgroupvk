@@ -9,6 +9,7 @@ def kaka2():
    tokense2 = input(' Ваш Токен от страницы: ')
    com = input('Скок комментов: ') 
    ssaw = input('Пост где оставить комменты: ')
+   timeq = inpit("Введите задержку (желательно 3 секунды) : ")
    ss = 0
    while int(ss) < int(com):
       try:
@@ -16,7 +17,7 @@ def kaka2():
           api = vk_session.get_api()
           api.wall.createComment(owner_id=owner2,message=titlse2,token=tokense2, post_id=ssaw)
           ss += 1
-          time.sleep(3)
+          time.sleep(timeq)
       except Exception as er:
          print("ОШИБКА, ТЫ ЕБАНАШКА ЧЕТ НЕ ТО ВВЕЛ! ПЕРЕПРОВЕРЬ ВСЕ.")
 def kaka3():
@@ -24,6 +25,7 @@ def kaka3():
    titlesss = input("Названия беседы: ")
    toss = input("Токен страницы: ")
    sasa = input("кол-во бесед: ")
+   timeowq = inpit("Введите задержку (желательно от 35 секунд) : ")
    sq = 0
    while int(sq) < int(sasa):
       try:
@@ -31,7 +33,7 @@ def kaka3():
          api = vk_session.get_api()
          api.messages.createChat(user_ids=owner3,title=titlesss,token=toss)
          sq += 1
-         time.sleep(60)
+         time.sleep(timeowq)
       except Exception as er:
          print("ОШИБКА, ЧЕТ НЕ ТО ВВЕЛ! ПЕРЕПРОВЕРЬ ВСЕ.")
 def kaka6():
@@ -39,6 +41,7 @@ def kaka6():
    posta = str(input("Названия поста: "))
    tokenser = str(input("Токен от страницы"))
    wwwaq = str(input("Сколько постов: "))
+   timeo = inpit("Введите задержку (желательно 5 секунд) : ")
    vk_session = vk_api.VkApi(token=str(tokenser))
    api = vk_session.get_api()
    wawaaw = 0
@@ -46,7 +49,7 @@ def kaka6():
       try:
          api.wall.post(owner_id=owene,message=posta)
          wawaaw += 1
-         time.sleep(4)
+         time.sleep(timeo)
       except vk_api.exceptions.Captcha as captcha:
            continue
 def kaka4():
